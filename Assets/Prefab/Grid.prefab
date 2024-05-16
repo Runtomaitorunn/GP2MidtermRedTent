@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7260954861374233762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6636175555848632451}
+  - component: {fileID: 6179887064328025820}
+  - component: {fileID: 8808680819942031277}
+  m_Layer: 0
+  m_Name: Grid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6636175555848632451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7260954861374233762}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6179887064328025820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7260954861374233762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b770965a67641489234a650412b2a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treePrefabs:
+  - {fileID: 7501103828400614760, guid: 5962548f793a16a47a191518b1ad593c, type: 3}
+  - {fileID: 7501103828400614760, guid: 5bddcbb6f7ab87a4c97d16955afe56fa, type: 3}
+  - {fileID: 719738564192030031, guid: 2267f892393f3264b85fd8c8cbd619a2, type: 3}
+  - {fileID: 719738564192030031, guid: 6b527fdf29053e9458d0795843639abd, type: 3}
+  terrainMaterial: {fileID: 2100000, guid: 2daa629ad3087c547b8fac962e233360, type: 2}
+  edgeMaterial: {fileID: 2100000, guid: 6dc6e069f3ec17b4aa99b2f66aa723c0, type: 2}
+  waterLevel: 0.4
+  scale: 0.1
+  treeNoiseScale: 0.25
+  treeDensity: 0.18
+  size: 100
+  playerSpawnPoint: {fileID: 7733597582826144070, guid: 697c74198b9e2ce49aead2b25a5b0082, type: 3}
+  rockPrefabs:
+  - {fileID: 9008680488821547404, guid: d2cddefd8b339304198dc584fe2a59b9, type: 3}
+  - {fileID: 9064082638515453075, guid: 6d429310f503155459abd49cbaf25b6c, type: 3}
+  isTree: 0
+  isEdge: 0
+  rockNoiseScale: 20
+  rockDensity: 0.005
+  tentSpawnPoint: {fileID: 6811023368596879497, guid: 921c8a9f154a55e43b91a204e1941676, type: 3}
+  tentPrefab: {fileID: 9217939889061765418, guid: 921c8a9f154a55e43b91a204e1941676, type: 3}
+--- !u!65 &8808680819942031277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7260954861374233762}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 65.61063, y: 1, z: 66.20137}
+  m_Center: {x: 49.33262, y: 0, z: 49.241806}
